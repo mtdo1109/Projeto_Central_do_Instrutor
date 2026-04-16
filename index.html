@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central do Instrutor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="img"><img src="img/ON.ico" alt="onbyte"></div>
+
+    <div class="container">
+        <h1>Central do Instrutor</h1>
+
+        <div class="botoes">
+            <button onclick="abrirsistema()">Abrir Sistema</button>
+            <button onclick="abrirplanilha()">Planilha de Presença</button>
+        </div>
+
+        <div class="mensagens">
+            <h2>Mensagens Padrões</h2>
+
+            <textarea id="mensagem" placeholder="Clique em um botão para gerar mensagem..."></textarea>
+
+            <div class="botoes-msg">
+                <button onclick="operacao()">Quando Há Operação</button>
+                <button onclick="prazoencerrado()">Prazo Encerrado de Curso</button>
+                <button onclick="atrasado()">Aluno Atrasado</button>
+                <button onclick="faltosoatrasado()">Aluno Faltoso e Atrasado</button>
+                <button onclick="reposicao()">Reposição de Aula</button>
+                <button onclick="responsavel()">Responsável</button>
+                <button onclick="comportamento()">Comportamento</button>
+                <button onclick="desempenhoprova()">Desempenho na Prova</button>
+                <button onclick="desempenho()">Desempenho</button>
+                <button onclick="BoasVindas()">Boas Vindas</button>
+                <button onclick="VoltasasAulas()">Voltas As Aulas</button>
+                <button onclick="mensagemFalta()">Falta</button>
+                <button onclick="mensagemAtraso()">Atraso</button>
+                <button onclick="mensagemRemarcacao()">Remarcação</button>
+                <button onclick="copiarMensagem()">Copiar</button>
+            </div>
+        </div>
+        <div class="codigos">
+            <h2>Códigos Anydesk</h2>
+            <div class="anydesk">
+                <div class="codigo">
+                    <ul>
+                        <li>Maq 1: <span id="maq1">1 586 383 756</span></li>
+                        <button onclick="copiarCodigo('maq1')">Copiar</button>
+                    </ul>
+                </div>
+
+                <div class="codigo">
+                    <ul>
+                        <li>Maq 2: <span id="maq2">1 463 487 133</span></li>
+                        <button onclick="copiarCodigo('maq2')">Copiar</button>
+                    </ul>
+                </div>
+                
+                <div class="codigo">
+                    <ul>
+                        <li>Maq 3: <span id="maq3"></span></li>
+                        <button onclick="copiarCodigo('maq3')">Copiar</button>
+                    </ul>
+                </div>
+
+                <div class="codigo">
+                    <ul>
+                        <li>Maq 4: <span id="maq4">1 057 967 880</span></li>
+                        <button onclick="copiarCodigo('maq4')">Copiar</button>
+                    </ul>
+                </div>
+
+                <div class="codigo">
+                    <ul>
+                        <li>Maq 5: <span id="maq5">1 433 123 428</span> </li>
+                        <button onclick="copiarCodigo('maq5')">Copiar</button>  
+                    </ul>
+                </div>
+
+                <div class="codigo">
+                    <ul>
+                        <li>Maq 6: <span id="maq6"></span></li>
+                        <button onclick="copiarCodigo('maq6')">Copiar</button>
+                    </ul>
+                </div>
+                
+                <div class="codigo">
+                    <ul>
+                        <li>Maq 7: <span id="maq7">1 041 762 902</span></li>
+                        <button onclick="copiarCodigo('maq7')">Copiar</button>
+                    </ul>
+                </div>
+                
+                <div class="codigo">
+                    <ul>
+                        <li>Maq 8: <span id="maq8">1 923 266 907</span></li>
+                        <button onclick="copiarCodigo('maq8')">Copiar</button>
+                    </ul>
+                </div>
+               
+                <div class="codigo">
+                    <ul>
+                        <li>Maq 9: <span id="maq9">1 631 999 563</span></li>
+                        <button onclick="copiarCodigo('maq9')">Copiar</button>
+                    </ul>
+                </div>
+
+                <div class="codigo">
+                    <ul>
+                        <li>Maq 10: <span id="maq10"></span></li>
+                        <button onclick="copiarCodigo('maq10')">Copiar</button>
+                    </ul>
+                </div>
+
+                <div class="codigo">
+                    <ul>
+                        <li>Maq 11: <span id="maq11"></span></li>
+                        <button onclick="copiarCodigo('maq11')">Copiar</button>
+                    </ul>
+                </div>
+
+                <div class="codigo">
+                    <ul>
+                        <li>Maq 12: <span id="maq12"></span></li>
+                        <button onclick="copiarCodigo('maq12')">Copiar</button>
+                    </ul>
+                </div>
+
+                <div class="codigo">
+                    <ul>
+                        <li>Maq 13: <span id="maq13"></span></li>
+                        <button onclick="copiarCodigo('maq13')">Copiar</button>
+                    </ul>
+                </div>
+
+                 <div class="codigo">
+                    <ul>
+                        <li>Maq 14: <span id="maq14"></span></li>
+                        <button onclick="copiarCodigo('maq14')">Copiar</button>
+                    </ul>
+                </div>
+
+                 <div class="codigo">
+                    <ul>
+                        <li>Maq 15: <span id="maq15">1 099 374 462</span></li>
+                        <button onclick="copiarCodigo('maq15')">Copiar</button>
+                    </ul>
+                </div>
+
+                 <div class="codigo">
+                    <ul>
+                        <li>Maq 16: <span>1 597 905 943</span></li>
+                        <button onclick="copiarCodigo('maq16')">Copiar</button>
+                    </ul>
+                </div>
+
+                 <div class="codigo">
+                    <ul>
+                        <li>Maq 17: <span id="maq17">1 950 529 359</span></li>
+                        <button onclick="copiarCodigo('maq17')">Copiar</button>
+                    </ul>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="carga">
+            <h2>Carga Horária</h2>
+            <div class="grid_cursos">
+
+                <div class="curso">
+                    <h3>Informática Profissional</h3>
+                    <ul>
+                        <li>Windows 11: 20 horas,</li>
+                        <li>Word 2019: 24 horas,</li>
+                        <li>Excel 2019: 24 horas,</li>
+                        <li>PowerPoint 2019: 24 horas,</li>
+                        <li>Internet: 22 horas</li>
+                    </ul>
+                </div>
+
+                <div class="curso">
+                    <h3>Excel Básico ao Avançado:</h3>
+                    <ul>
+                        <li>Excel 2019: 24 horas,</li>
+                        <li>Excel 2019 - Avançado: 24 horas,</li>
+                        <li>Power BI: 16 horas</li>
+                    </ul>
+                </div>
+
+                <div class="curso">
+                    <h3>Programação:</h3>
+                    <ul>
+                        <li>Lógica de Programação: 16 horas,</li>
+                        <li>Python: 24 horas</li>
+                    </ul>
+                </div>
+                
+                <div class="curso">
+                    <h3>Pacote Office Avançado:</h3>
+                    <ul>
+                        <li>Word 2019: 24 horas,</li>
+                        <li>Excel 2019: 24 horas,</li>
+                        <li>Excel 2019 - Avançado: 24 horas,</li>
+                        <li>PowerPoint 2019: 24 horas,</li>
+                        <li>Power BI: 16 horas</li>
+                    </ul>
+                </div>
+                
+                <div class="curso">
+                    <h3>Pacote Office:</h3>
+                    <ul>
+                        <li>Word 2019: 24 horas,</li>
+                        <li>Excel 2019: 24 horas,</li>
+                        <li>PowerPoint 2019: 24 horas,</li>
+                    </ul>
+                </div>
+                
+                <div class="curso">
+                    <h3>Informática Para Terceira Idade:</h3>
+                    <ul>
+                        <li>Windows 11: 20 horas,</li>
+                        <li>Word 2019: 24 horas,</li>
+                        <li>Digitação: 8 horas</li>
+                    </ul>
+                </div>
+                
+                <div class="curso">
+                    <h3>Informática Básica:</h3>
+                    <ul>
+                        <li>Windows 11: 20 horas,</li>
+                        <li>Internet: 22 horas,</li>
+                        <li>Digitação: 8 horas</li>
+                    </ul>
+                </div>
+                
+                <div class="curso">
+                    <h3>Games:</h3>
+                    <ul>
+                        <li>Lógica de Programação: 16 horas,</li>
+                        <li>Construct 3: 30 horas</li>
+                    </ul>
+                </div>
+                
+                <div class="curso">
+                    <h3>Criação de Sites:</h3>
+                    <ul>
+                        <li>Photoshop 22: 28 horas,</li>
+                        <li>HTML e CSS : 20 horas</li>
+                    </ul>
+                </div>
+                
+                <div class="curso">
+                    <h3>Design Gráfico:</h3>
+                    <ul>
+                        <li>Photoshop 22: 28 horas,</li>
+                        <li>CorelDraw 2021 : 16 horas,</li>
+                        <li>Illustrator 2022 : 24 horas,</li>
+                        <li>InDesign 2023 : 20 horas,</li>
+                        <li>Canva : 16 horas</li>
+                    </ul>
+                </div>
+                
+                <div class="curso">
+                    <h3>Edição de Vídeo:</h3>
+                    <ul>
+                        <li>Premiere Pro 2019: 24 horas</li>
+                        <li>After Effects 2019: 24 horas,</li>
+                        <li>Photoshop 22: 28 horas,</li>
+                        <li>Youtuber: 24 horas</li>
+                    </ul>
+                </div>
+                
+                <div class="curso">
+                    <h3>Marketing Digital:</h3>
+                    <ul>
+                        <li>Marketing Digital: 10 horas,</li>
+                        <li>Marketing Pessoal : 12 horas,</li>
+                        <li>Vendas: 12 horas,</li>
+                        <li>Canva : 24 horas</li>
+                    </ul>
+                </div>
+                
+                <div class="curso">
+                    <h3>Auxiliar Administrativo: </h3>
+                    <ul>
+                        <li>Word 2019: 24 horas,</li>
+                        <li>Excel 2019: 24 horas,</li>
+                        <li>Secretariado V5 : 12 horas,</li>
+                        <li>Departamento Pessoal : 10 horas,</li>
+                        <li>Contabilidade V5 : 8 horas,</li>
+                        <li>Atendimento ao Cliente : 8 horas</li>
+                    </ul>
+                </div>
+                
+                <div class="curso">
+                    <h3>Secretariado:</h3>
+                    <ul>
+                        <li>Windows 11: 20 horas,</li>
+                        <li>Word 2019: 24 horas,</li>
+                        <li>Excel 2019: 24 horas,</li>
+                        <li>Secretariado V5 : 12 horas,</li>
+                        <li>Atendimento ao Cliente : 8 horas</li>
+                    </ul>
+                </div>
+                
+                <div class="curso">
+                    <h3>Rotinas Administrativas:</h3>
+                    <ul>
+                        <li>Secretariado V5 : 12 horas,</li>
+                        <li>Administração V6 : 24 horas,</li>
+                        <li>Gestão de Projetos V5 : 12 horas,</li>
+                        <li>Logística V5: 10 horas,</li>
+                        <li>Recursos Humanos V5 : 8 horas,</li>
+                        <li>Liderança e Gestão de Pessoas na Prática V5 : 8 horas,</li>
+                        <li>Oratória V5 : 20 horas</li>
+                    </ul>
+                </div>
+                
+                <div class="curso">
+                    <h3>Agente Comercial:</h3>
+                    <ul>
+                        <li>Word 2019: 24 horas,</li>
+                        <li>Excel 2019 : 24 horas,</li>
+                        <li>Atendimento ao Cliente: 8 horas,</li>
+                        <li>Marketing Digital : 10 horas,</li>
+                        <li>Canva : 16 horas,</li>
+                        <li>Oratoria V5 : 20 horas</li>
+                    </ul>
+                </div>
+                
+                <div class="curso">
+                    <h3>Auxiliar de Logística:</h3>
+                    <ul>
+                        <li>Excel 2019 : 24 horas,</li>
+                        <li>Excel 2019 - Avançado : 24 horas,</li>
+                        <li>Administração V6 : 24 horas,</li>
+                        <li>Logística V5 : 10 horas,</li>
+                    </ul>
+                </div>
+                
+                <div class="curso">
+                    <h3>Telemarketing e Vendas:</h3>
+                    <ul>
+                        <li>Telemarketing V5 : 12 horas,</li>
+                        <li>Vendas : 12 horas,</li>
+                        <li>Atendimento ao Cliente : 8 horas,</li>
+                        <li>Word 2019 : 24 horas,</li>
+                        <li>Excel 2019 : 24 horas,</li>
+                        <li>Oratória V5 : 20 horas</li>
+                    </ul>
+                </div>
+                
+                <div class="curso">
+                    <h3>Jovem Aprendiz:</h3>
+                    <ul>
+                        <li>Word 2019: 24 horas,</li>
+                        <li>Excel 2019: 24 horas,</li>
+                        <li>Matemática Financeira V2 : 12 horas,</li>
+                        <li>Oratoria V5 : 20 horas,</li>
+                        <li>Gestão de Projetos V5 : 12 horas,</li>
+                    </ul>
+                </div>
+                
+                <div class="curso">
+                    <h3>Atendente de Farmácia:</h3>
+                    <ul>
+                        <li>Balconista de Farmácia V5 : 14 horas,</li>
+                        <li>Operações de Caixa V4: 16 horas,</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>Desenvolvido por: Matheus Pimentel💻<br><br>OnByte Penha 2026</footer>
+
+    <script>
+        function operacao() {
+            document.getElementById("mensagem").value =
+                "Oi, (Nome do Aluno)! Tudo bem com você? Aqui é o xxxxx instrutor da Onbyte! Nos últimos dias tivemos notícias sobre as operações que aconteceram na Penha e no Complexo do Alemão, e fiquei preocupado com a segurança de todos. Independente da região em que você e sua família moram, espero que esteja bem e seguros. Se estiver precisar de apoio, pode nos comunicar! O importante é saber que vocês estejam bem. Atenciosamente *Laboratório Onbyte*"
+        }
+
+        function prazoencerrado() {
+            document.getElementById("mensagem").value =
+                "Olá xxxx, boa tarde, tudo bem? Aqui é o xxxx, Instrutor da Onbyte. Motivo do meu contato é para alertar sobre a situação atual do curso. Verifiquei que já encerrou o prazo do seu curso, você ainda está no *xxxx*, com *xx* aula"
+        }
+
+        function atrasado() {
+            document.getElementById("mensagem").value =
+                "Olá xxx, boa xxx, tudo bem? Aqui é o Gabriel, instrutor da Onbyte. Vi que você está no *xxx* mês e também terá o mês grátis. Precisamos encontrar uma maneira de você avançar mais rápido nos módulos, pois você ainda está no *xxx*, com *xxx* aulas para terminar. Peço que na sua próxima aula você fale com o instrutor mais próximo de você que ele irá te explicar o seu novo plano de aula para você terminar o curso no prazo. Caso não consiga terminar o curso a tempo você terá duas opções, finalizar e receber o certificado dos módulos que você concluiu, ou renovar, a renovação consiste em continuar pagando parcelas mensais enquanto você estiver estudando."
+        }
+
+        function faltosoatrasado() {
+            document.getElementById("mensagem").value =
+                "Olá xxx, boa xxx, tudo bem? Aqui é o xxxx, Instrutor da Onbyte. Motivo do meu contato é para alertar sobre a situação atual do curso. Verifiquei aqui que tem algumas aulas para repor, faltam xxx meses para o término do prazo do curso, ainda está no xxx, com xx aulas para terminar. *Peço que na sua próxima aula fale com o instrutor mais próximo de que ele irá te explicar o seu novo plano de aula para você terminar o curso no prazo* *É super importante que coloque as aulas de reposição em dia para seguir em ordem com o prazo de término do contrato* *Entre em contato com o nosso setor da recepção para que consiga repor as suas aulas pendentes.* Consegue marcar suas aulas entre 08h e 20h de segunda a sexta e sábado de 08h até as 16h. Caso não consiga terminar o curso a tempo terá duas opções, finalizar e receber o certificado dos módulos que concluiu, ou renovar, a renovação consiste em continuar pagando parcelas mensais enquanto estiver estudando!"
+        }
+
+        function reposicao() {
+            document.getElementById("mensagem").value =
+                "Olá xxx, boa xxx, tudo bem? Aqui é o Instrutor xxxx da On Byte. Motivo do meu contato é para notificar que tem algumas aulas para repor. É super importante que mantenha suas aulas em dia para ficar em ordem com o prazo de duração do curso, consegue marcar suas aulas com o nosso setor da recepção. Qualquer dúvida estou a disposição!"
+        }
+
+        function responsavel() {
+            document.getElementById("mensagem").value =
+                "Olá xxx, boa xxx, tudo bem? Aqui é o instrutor xxxx da On Byte Penha. Gostaria de conversar sobre a situação atual do curso do(a) xxxxx. Poderia me dar um retorno quando possível? Fico à disposição para conversarmos."
+        }
+
+        function comportamento() {
+            document.getElementById("mensagem").value =
+                "Olá xxx, bom(a) xxx! Aqui é o xxx, instrutor da On Byte Penha. O motivo do meu contato é fazer algumas observações sobre o comportamento do xxx.: (Reclamação)"
+        }
+
+        function desempenhoprova() {
+            document.getElementById("mensagem").value =
+                "Olá xxx, bom(a) xxx! Aqui é o xxx, instrutor da On Byte Penha. O motivo da minha mensagem é para comunicar que você tirou (nota) na sua avaliação de xxx. Nós do laboratório gostaríamos de parabenizá-lo(a) pelo seu ótimo desempenho!"
+        }
+
+        function desempenho() {
+            document.getElementById("mensagem").value =
+                "Olá xxx, bom(a) xxx! Aqui é o xxx, instrutor da On Byte Penha. O motivo da minha mensagem é para comunicá-lo(a) que seu filho(a) está tendo um ótimo desempenho no curso. (observação sobre o aluno)"
+        }
+
+        function VoltasasAulas() {
+            document.getElementById("mensagem").value =
+                "Olá xxxx, aqui é o instrutor xxxxxx. É com muita alegria que iniciamos mais um ano letivo na On Byte Penha. Este é o momento de renovar energias, retomar os estudos e mergulhar em novos aprendizados que vão abrir portas para o futuro. A tecnologia não para de evoluir, e juntos vamos explorar ferramentas, desenvolver habilidades e transformar conhecimento em oportunidades. Desejamos a todos um ano letivo produtivo, cheio de descobertas e conquistas. Vamos construir, inovar e aprender lado a lado!"
+        }
+
+        function BoasVindas() {
+            document.getElementById("mensagem").value =
+                "Bem vindo a OnByte Penha. Olá xxxxxx, Aqui é o xxxxxx Instrutor da OnByte Penha, Ficamos contentes em participar de sua trajetória profissional e acadêmica."
+        }
+
+        function abrirsistema() {
+            window.open("https://app.cgd.com.br/login");
+        }
+
+        function abrirplanilha() {
+            window.open("https://excel.cloud.microsoft/open/onedrive/?docId=14B417347F702AF7%21s2926805e9ccf4a468ec02e9b1e06c30e&driveId=14b417347f702af7");
+        }
+
+        function mensagemFalta() {
+            document.getElementById("mensagem").value =
+                "Olá xxx, boa xxx, tudo bem? Aqui é o xxxx, instrutor da Onbyte. Vi que a sua última vinda ao curso foi no dia xx/xx. Depois disso, não tivemos mais notícias suas. Aconteceu algo?";
+        }
+
+        function mensagemAtraso() {
+            document.getElementById("mensagem").value =
+                "Olá! tem atraso(exemplo)";
+        }
+
+        function mensagemRemarcacao() {
+            document.getElementById("mensagem").value =
+                "Olá! tem remarcação(exemplo)";
+        }
+
+        function copiarMensagem() {
+            const texto = document.getElementById("mensagem");
+            texto.select();
+            document.execCommand("copy");
+            alert("Mensagem copiada!");
+        }
+
+        function copiarCodigo(id) {
+            const codigo = document.getElementById(id).innerText;
+
+            navigator.clipboard.writeText(codigo)
+                .then(() => {
+                    alert("Código copiado: " + codigo);
+                })
+                .catch(() => {
+                    alert("Erro ao copiar!");
+        });
+}
+
+    </script>
+
+</body>
+
+</html>
